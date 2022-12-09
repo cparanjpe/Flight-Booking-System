@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.4" prefWidth="930.4" spacing="20.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlinesbooking.domesticFlightLayoutController">
+   <children>
+      <Label prefHeight="38.0" prefWidth="161.0" text="Domestic Flight Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="849.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <VBox.margin>
+            <Insets left="150.0" right="150.0" />
+         </VBox.margin>
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="95.0" prefWidth="162.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="102.0" text="Departure">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="search_domestic_Departure" prefHeight="26.0" prefWidth="161.0" stylesheets="@customDesign.css">
+                     <styleClass>
+                        <String fx:value="whiteBackground" />
+                        <String fx:value="Login_signUp_TextFields" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ChoiceBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="34.0" prefWidth="106.0" text="To">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="98.0" text="Arrival">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="search_domestic_Arrival" prefWidth="150.0" stylesheets="@customDesign.css">
+                     <styleClass>
+                        <String fx:value="addWhiteBackground" />
+                        <String fx:value="Login_signUp_TextFields" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ChoiceBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="97.0" prefWidth="183.0">
+               <children>
+                  <Button fx:id="search_domestic_SeachBtn" mnemonicParsing="false" onAction="#search_domesticFlights" prefHeight="40.0" prefWidth="130.0" style="-fx-background-radius: 1000;" stylesheets="@customDesign.css" text="Search" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="login_signUpBtn" />
+                        <String fx:value="reverseGradientHoverEffect" />
+                     </styleClass>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding></HBox>
+      <ScrollPane fx:id="domestic_scrollPane" prefHeight="482.0" prefWidth="930.0" style="-fx-background: black;">
+         <content>
+            <VBox fx:id="cardKoIsmeDalnaHai_domestic" prefHeight="0.0" prefWidth="915.0" spacing="15.0" style="-fx-background-color: black;">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

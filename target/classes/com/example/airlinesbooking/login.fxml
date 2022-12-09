@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="511.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlinesbooking.loginController">
+   <children>
+      <AnchorPane fx:id="myAnchorpaneLogo" prefHeight="511.0" prefWidth="340.0" stylesheets="@customDesign.css">
+         <children>
+            <ImageView fitHeight="386.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/Login_SignUp_Logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="256.0" prefHeight="43.0" prefWidth="340.0" text="Book My Flight" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Regular" size="35.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="476.0" prefHeight="34.0" prefWidth="340.0" text="bookmyflight2022@gmail.com" textFill="WHITE">
+               <font>
+                  <Font name="Segoe Print" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutY="441.0" prefHeight="34.0" prefWidth="340.0" text="     (508) 551-9722" textFill="WHITE">
+               <font>
+                  <Font name="Segoe Script" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutY="406.0" prefHeight="34.0" prefWidth="340.0" stylesheets="@customDesign.css" text="     Contact us on :" textFill="WHITE">
+               <font>
+                  <Font name="Segoe Print" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="340.0" prefHeight="511.0" prefWidth="467.0" style="-fx-background-color: #e3fbff;" stylesheets="@customDesign.css">
+         <children>
+            <Pane layoutX="36.0" layoutY="73.0" prefHeight="90.0" prefWidth="396.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="14.0" prefHeight="34.0" prefWidth="204.0" text="User-Name or Email Address">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="24.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/userLogo.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="login_username_email_textField" layoutX="59.0" layoutY="39.0" prefHeight="34.0" prefWidth="309.0" styleClass="Login_signUp_TextFields" stylesheets="@customDesign.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane layoutX="36.0" layoutY="217.0" prefHeight="84.0" prefWidth="396.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="34.0" prefWidth="204.0" text="Password">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="24.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/passwordLogo.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="login_password_textField" layoutX="60.0" layoutY="38.0" prefHeight="34.0" prefWidth="309.0" styleClass="Login_signUp_TextFields" />
+               </children>
+            </Pane>
+            <Button fx:id="loginBtn" layoutX="79.0" layoutY="349.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="309.0" style="-fx-cursor: hand; -fx-background-radius: 1000;" stylesheets="@customDesign.css" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="login_signUpBtn" />
+                  <String fx:value="reverseGradientHoverEffect" />
+               </styleClass>
+            </Button>
+            <Button fx:id="login_signUpBtn" layoutX="79.0" layoutY="427.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="93.0" style="-fx-background-color: none; -fx-cursor: hand;" text="Sign up" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="login_forgotPasswordBtn" layoutX="234.0" layoutY="427.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: none; -fx-cursor: hand;" text="Forgot Password ?" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

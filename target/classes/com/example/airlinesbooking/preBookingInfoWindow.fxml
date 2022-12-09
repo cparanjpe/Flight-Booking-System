@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="627.0" styleClass="myGradientTheme1" stylesheets="@customDesign.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlinesbooking.preBookingWindowController">
+   <children>
+      <VBox prefHeight="391.0" prefWidth="392.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label prefHeight="18.0" prefWidth="433.0" text="Travellers">
+               <font>
+                  <Font name="Candara Bold" size="16.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="mySpinner" prefHeight="26.0" prefWidth="173.0" stylesheets="@customDesign.css">
+               <styleClass>
+                  <String fx:value="addWhiteBackground" />
+                  <String fx:value="Login_signUp_TextFields" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Spinner>
+            <RadioButton fx:id="oneWay_radioBtn" mnemonicParsing="false" onAction="#radioBtnAndReturnDatePickerVisibility" selected="true" text="One-Way">
+               <toggleGroup>
+                  <ToggleGroup fx:id="singleOrReturn" />
+               </toggleGroup>
+               <font>
+                  <Font name="Candara Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="return_RadioBtn" mnemonicParsing="false" onAction="#radioBtnAndReturnDatePickerVisibility" selected="true" text="Return" toggleGroup="$singleOrReturn">
+               <font>
+                  <Font name="Candara Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <Label prefHeight="18.0" prefWidth="442.0" text="Departure">
+               <font>
+                  <Font name="Candara Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <DatePicker fx:id="departureDatePicker" styleClass="transparentBackround" stylesheets="@customDesign.css">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </DatePicker>
+            <Label fx:id="ReturnDateLabel" prefHeight="18.0" prefWidth="404.0" text="Return">
+               <font>
+                  <Font name="Candara Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <DatePicker fx:id="ReturnDatePicker" styleClass="transparentBackround" stylesheets="@customDesign.css">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </DatePicker>
+            <Label prefHeight="18.0" prefWidth="509.0" text="Class">
+               <font>
+                  <Font name="Candara Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <ChoiceBox fx:id="travelClassChosser" prefWidth="150.0" styleClass="Login_signUp_TextFields" stylesheets="@customDesign.css">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ChoiceBox>
+            <Button fx:id="proceedBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loadBookingDetailsLayout" stylesheets="@customDesign.css" text="Proceed" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Candara Bold" size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="login_signUpBtn" />
+                  <String fx:value="reverseGradientHoverEffect" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="booking_window_cancelBtn" mnemonicParsing="false" onAction="#goBackToUserPortal" styleClass="addWhiteBackground" stylesheets="@customDesign.css" text="Cancel" textFill="#ff0101" underline="true">
+               <font>
+                  <Font name="Candara Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="150.0" right="150.0" />
+   </padding>
+</VBox>

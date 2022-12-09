@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="card" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="885.0" style="-fx-background-radius: 15;" styleClass="myGradientTheme1" stylesheets="@customDesign.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlinesbooking.transactionCardController">
+   <children>
+      <Label fx:id="from" prefHeight="100.0" prefWidth="179.0" text="From : " textFill="AQUA">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="to1" prefHeight="79.0" prefWidth="99.0" stylesheets="@customDesign.css" text="To " textFill="AQUA">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="to" prefHeight="100.0" prefWidth="218.0" stylesheets="@customDesign.css" text="To :" textFill="AQUA">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="amount" prefHeight="100.0" prefWidth="228.0" text="Amount : " textFill="AQUA">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="transactionId" prefHeight="100.0" prefWidth="227.0" text="Transaction Id : " textFill="AQUA">
+         <font>
+            <Font name="Candara Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</HBox>

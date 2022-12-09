@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="717.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlinesbooking.signUpController">
+   <children>
+      <AnchorPane prefHeight="511.0" prefWidth="802.0">
+         <children>
+            <AnchorPane fx:id="myAnchorpaneLogo" prefHeight="718.0" prefWidth="340.0" stylesheets="@customDesign.css">
+               <children>
+                  <ImageView fitHeight="386.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/Login_SignUp_Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutY="256.0" prefHeight="43.0" prefWidth="340.0" text="Book My Flight" textFill="WHITE">
+                     <font>
+                        <Font name="Dubai Regular" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutY="476.0" prefHeight="34.0" prefWidth="340.0" text="bookmyflight2022@gmail.com" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe Print" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="441.0" prefHeight="34.0" prefWidth="340.0" text="     (508) 551-9722" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe Script" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="406.0" prefHeight="34.0" prefWidth="340.0" stylesheets="@customDesign.css" text="     Contact us on :" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe Print" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="340.0" prefHeight="718.0" prefWidth="467.0" style="-fx-background-color: #e3fbff;" stylesheets="@customDesign.css">
+               <children>
+                  <Pane layoutX="36.0" layoutY="114.0" prefHeight="90.0" prefWidth="396.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <Label contentDisplay="CENTER" layoutX="59.0" layoutY="14.0" prefHeight="34.0" prefWidth="204.0" text="User-Name">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="23.0" fitWidth="30.0" layoutX="24.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/userLogo.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="signup_username_textField" layoutX="59.0" layoutY="39.0" prefHeight="34.0" prefWidth="309.0" styleClass="Login_signUp_TextFields" stylesheets="@customDesign.css">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="Login_SignUpTextFields" layoutX="36.0" layoutY="527.0" prefHeight="89.0" prefWidth="396.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <Label contentDisplay="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="34.0" prefWidth="204.0" text="Confirm Password">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="24.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/passwordLogo.png" />
+                           </image>
+                        </ImageView>
+                        <PasswordField fx:id="signup_confirmPassword_textField" layoutX="60.0" layoutY="38.0" prefHeight="34.0" prefWidth="309.0" styleClass="Login_signUp_TextFields" stylesheets="@customDesign.css" />
+                     </children>
+                  </Pane>
+                  <Button fx:id="signUpBtn" layoutX="79.0" layoutY="629.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="309.0" style="-fx-cursor: hand; -fx-background-radius: 1000;" stylesheets="@customDesign.css" text="Sign up" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="login_signUpBtn" />
+                        <String fx:value="reverseGradientHoverEffect" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="signup_loginBtn" layoutX="36.0" layoutY="672.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="63.0" style="-fx-background-color: none; -fx-cursor: hand;" text="Login" underline="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Pane layoutX="36.0" layoutY="426.0" prefHeight="89.0" prefWidth="396.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <Label contentDisplay="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="34.0" prefWidth="204.0" text="Create Password">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="24.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/passwordLogo.png" />
+                           </image>
+                        </ImageView>
+                        <PasswordField fx:id="signup_createPassword_textField" layoutX="60.0" layoutY="38.0" prefHeight="34.0" prefWidth="309.0" styleClass="Login_signUp_TextFields" stylesheets="@customDesign.css" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="36.0" layoutY="218.0" prefHeight="90.0" prefWidth="396.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <Label contentDisplay="CENTER" layoutX="59.0" layoutY="14.0" prefHeight="34.0" prefWidth="204.0" text="Email">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="signup_email_textField" layoutX="59.0" layoutY="39.0" prefHeight="34.0" prefWidth="309.0" styleClass="Login_signUp_TextFields" stylesheets="@customDesign.css">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="30.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/emailIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="36.0" layoutY="320.0" prefHeight="90.0" prefWidth="396.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <Label contentDisplay="CENTER" layoutX="59.0" layoutY="14.0" prefHeight="34.0" prefWidth="204.0" text="Phone">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="signup_phone_textField" layoutX="59.0" layoutY="39.0" prefHeight="34.0" prefWidth="309.0" styleClass="Login_signUp_TextFields" stylesheets="@customDesign.css">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <ImageView fitHeight="23.0" fitWidth="30.0" layoutX="27.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/phoneIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="36.0" layoutY="14.0" prefHeight="90.0" prefWidth="396.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <Label contentDisplay="CENTER" layoutX="59.0" layoutY="14.0" prefHeight="34.0" prefWidth="204.0" text="Full Name">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="23.0" fitWidth="30.0" layoutX="24.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/userLogo.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="signup_fullName" layoutX="59.0" layoutY="39.0" prefHeight="34.0" prefWidth="309.0" styleClass="Login_signUp_TextFields" stylesheets="@customDesign.css">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

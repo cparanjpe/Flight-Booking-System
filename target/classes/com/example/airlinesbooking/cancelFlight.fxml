@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.4" prefWidth="930.4" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlinesbooking.cancelFlightController">
+   <children>
+      <AnchorPane prefHeight="333.0" prefWidth="330.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Pane layoutY="101.0" prefHeight="90.0" prefWidth="330.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="59.0" layoutY="14.0" prefHeight="34.0" prefWidth="204.0" text="Enter Your Booking Id">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cancelFlight_enterBookingId" layoutX="59.0" layoutY="39.0" prefHeight="34.0" prefWidth="204.0" styleClass="Login_signUp_TextFields" stylesheets="@customDesign.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Button layoutX="56.0" layoutY="210.0" mnemonicParsing="false" onAction="#cancelMyFlight" prefHeight="34.0" prefWidth="143.0" stylesheets="@customDesign.css" text="Cancel Flight" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="myGradientTheme1" />
+                  <String fx:value="btn" />
+                  <String fx:value="reverseGradientHoverEffect" />
+               </styleClass>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="292.0" prefHeight="34.0" prefWidth="304.0" text="You can find your booking id under the barcode of &#10;your Boarding pass " textFill="#6e6c6c">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="25.0" prefHeight="41.0" prefWidth="330.0" text="Flight Cancellation">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="150.0" left="300.0" right="300.0" top="150.0" />
+   </padding>
+</VBox>
